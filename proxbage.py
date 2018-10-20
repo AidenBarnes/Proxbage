@@ -92,4 +92,4 @@ DaysSinceBirth += DaysSinceBday + CountLeapDays(BirthYear,t[0])
 AgeOnProxima = DaysSinceBirth/proxbyear
 
 print('You would be '+str(int(AgeOnProxima))+' years old on Proima Centauri b.')
-print("You're old.")
+print("You're old.>:)")
