@@ -3,7 +3,7 @@
 import time
 days_per_month = [31,28,31,30,31,30,31,31,30,31,30,31]
 LeapYears = [1900,1904,1908,1912,1916,1920,1924,1928,1932,1936,1940,1944,1948,1952,1956,1960,1964,1968,1972,1976,1980,1984,1988,1992,1996,2004,2008,2012,2016,2020,2024,2028,2032,2036,2040,2044,2048,2052,2056,2060,2064,2068]
-symbol = "~`!@#$%^&*()_-+={}[]:>;',</?*-+"
+symbol = "~`!@#$%^&*()_-+={}[]:>;',</?*-+qwertyuiopasdfghjklzxcvbnm"
 def days_to_date(month,day,year):
     days = 0
     if(month>1):
@@ -91,5 +91,5 @@ DaysSinceBirth += DaysSinceBday + CountLeapDays(BirthYear,t[0])
 
 AgeOnProxima = DaysSinceBirth/proxbyear
 
-print('You would be '+str(int(AgeOnProxima))+' years old on Proima Centauri b.')
-print("You're old.>:)")
+print('You would be '+str(int(AgeOnProxima))+' years old on Proxima Centauri b.')
+print("You're old.")
