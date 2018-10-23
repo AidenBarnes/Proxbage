@@ -72,8 +72,6 @@ if BirthYear == 2000:
     BigDay -=1
 day = 0
 
-
-
 while day <= 00 or day > BigDay:
     day = int(input('Enter birth day (1-'+str(BigDay)+'): '))
 DaysSoFar = t[7]
@@ -89,7 +87,10 @@ YearsSinceBirth = LastBirthYear - BirthYear
 DaysSinceBirth = 365*YearsSinceBirth
 DaysSinceBirth += DaysSinceBday + CountLeapDays(BirthYear,t[0])
 
-AgeOnProxima = DaysSinceBirth/proxbyear
+AgeOnProxima = int(DaysSinceBirth/proxbyear)
 
-print('You would be '+str(int(AgeOnProxima))+' years old on Proxima Centauri b.')
+print('You would be '+str(AgeOnProxima)+' years old on Proxima Centauri b.')
 print("You're old.")
+DaysAliveNexBday = int((AgeOnProxima +1)*proxbyear)
+DaysToNexBday = (DaysAliveNexBday - DaysSinceBirth)
+print("It is "+str(int(DaysToNexBday))+" days until your birthday on Proxima Centauri b")
