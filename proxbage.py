@@ -93,4 +93,7 @@ print('You would be '+str(AgeOnProxima)+' years old on Proxima Centauri b.')
 print("You're old.")
 DaysAliveNexBday = int((AgeOnProxima +1)*proxbyear)
 DaysToNexBday = (DaysAliveNexBday - DaysSinceBirth)
-print("It is "+str(int(DaysToNexBday))+" days until your birthday on Proxima Centauri b")
+if DaysToNexBday == 0:
+    print('HAPPY BIRTHDAY!!!!!!!!!! you turned '+str(AgeOnProxima)+' today')
+else:
+    print("It is "+str(int(DaysToNexBday))+" days until your birthday on Proxima Centauri b")
