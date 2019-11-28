@@ -90,10 +90,10 @@ DaysSinceBirth += DaysSinceBday + CountLeapDays(BirthYear,t[0])
 AgeOnProxima = int(DaysSinceBirth/proxbyear)
 
 print('You would be '+str(AgeOnProxima)+' years old on Proxima Centauri b.')
-print("You're old.")
+print("You're old. :P")
 DaysAliveNexBday = int((AgeOnProxima +1)*proxbyear)
 DaysToNexBday = (DaysAliveNexBday - DaysSinceBirth)
 if DaysToNexBday == 0:
-    print('HAPPY BIRTHDAY!!!!!!!!!! you turned '+str(AgeOnProxima)+' today')
+    print('HAPPY BIRTHDAY!!!!!!!!!! you turned '+str(AgeOnProxima)+' today!')
 else:
-    print("It is "+str(int(DaysToNexBday))+" days until your birthday on Proxima Centauri b")
+    print("It is "+str(int(DaysToNexBday))+" days until your birthday on Proxima Centauri b.")
